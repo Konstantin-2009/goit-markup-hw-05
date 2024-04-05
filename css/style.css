@@ -506,5 +506,20 @@ p {
 .footer-link:focus {
   background-color: #31d0aa;
 }
-.button {
+.footer-btn {
+  min-width: 165px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #404bbf;
 }
