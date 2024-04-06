@@ -588,25 +588,27 @@
     <div class="modal-overlay is open">
       <div class="modal">
         <button class="modal-btn" type="button">
-          <svg class="modal-btn-icon" width="8" height="8">
+          <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.2.svg#close"></use>
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="reviev" autocomplete="on">
           <div class="modal-wrapper">
-            <label class="modal-label" id="user_name" for="user_name"
-              >Name</label
-            >
+            <label class="modal-label" for="user_name">Name</label>
             <div class="modal-field">
-              <input type="modal-field-input" type="text" name="user_name" />
+              <input
+                class="modal-field-input"
+                type="text"
+                id="user_name"
+                name="user_name" />
               <svg class="modal-field-icon" width="18" height="24">
                 <use href="./images/icons.2.svg#personp"></use>
               </svg>
             </div>
           </div>
           <div class="modal-wrapper">
-            <label class="modal-label">Phone</label>
+            <label class="modal-label" for="user_phone">Phone</label>
             <div class="modal-field">
               <input class="modal-field-input" type="tel" name="user_phone" />
               <svg class="modal-field-icon" width="18" height="24">
@@ -615,7 +617,7 @@
             </div>
           </div>
           <div class="modal-wrapper">
-            <label class="modal-label">Email</label>
+            <label class="modal-label" for="user_email">Email</label>
             <div class="modal-field">
               <input class="modal-field-input" type="tel" name="user_email" />
               <svg class="modal-field-icon" width="18" height="24">
@@ -625,30 +627,36 @@
           </div>
           <div class="modal-wrapper">
             <label class="modal-label" for="user_message">Comment</label>
-            <textarea
-              class="modal-messang"
-              name="user_message"
-              id="user_message"
-              placeholder="Text input"></textarea>
+            <div class="modal-field">
+              <textarea
+                class="modal-messang"
+                name="user_message"
+                id="user_message"
+                cols="30"
+                rows="4"
+                placeholder="Text input"></textarea>
+            </div>
           </div>
-          <input
-            class="visually-hidden checkbox-hidden"
-            type="checkbox"
-            name="privacy_policy"
-            id="checkbox" />
-          <label class="agreement">
-            <span class="agreement-checkbox">
-              <svg class="agreement-checkbox-icon" width="10" height="8">
-                <use href="./images/icons.2.svg#Checkbox"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the&nbsp;<a
-              class="agreement-checkbox-link"
-              href="">
-              Privacy Policy</a
-            >
-          </label>
-          <button class="" type="submit">Send</button>
+          <div class="checkbox-container">
+            <input
+              class="visually-hidden checkbox-hidden"
+              type="checkbox"
+              name="privacy_policy"
+              id="checkbox" />
+            <label class="agreement" for="checkbox">
+              <span class="agreement-checkbox">
+                <svg class="agreement-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.2.svg#Checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;<a
+                class="agreement-checkbox-link"
+                href="">
+                Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="btn-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
