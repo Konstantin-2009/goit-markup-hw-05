@@ -638,4 +638,27 @@ p {
   color: #434455;
 }
 .modal-massage::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+.agreement {
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.agreement-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
+}
+.checkbox-hidden:checked + .agreement .agreement-checkbox {
+  border: none;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
 }
