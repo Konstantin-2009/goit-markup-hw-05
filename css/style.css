@@ -1,3 +1,6 @@
+.hide {
+  display: none;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
@@ -81,7 +84,6 @@ p {
 
 .nav-list {
   display: flex;
-
   gap: 40px;
   margin-right: 332px;
 }
@@ -466,7 +468,7 @@ p {
 }
 .cont-icon {
   display: inline-block;
-  width: 264px;
+  min-width: 264px;
   height: 112px;
 }
 .footer-list {
@@ -490,19 +492,18 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sub {
-  margin-left: 80px;
 }
 .footer-label {
   display: inline-block;
   border-radius: 4px;
-  padding: 8px 24px;
-  width: 165px;
+  padding: 8px 0 8px 8px;
+  width: 264px;
   height: 40px;
+  margin-right: 24px;
 }
 .footer-icon-text {
   display: inline-block;
   margin-bottom: 16px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -521,6 +522,11 @@ p {
 .footer-link:focus {
   background-color: #31d0aa;
 }
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-btn {
   min-width: 165px;
   height: 40px;
@@ -533,13 +539,19 @@ p {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 .footer-btn:hover,
 .footer-btn:focus {
   background-color: #404bbf;
 }
 .footer-btn-icon {
-  fill: #4d5ae5;
+  fill: #fff;
+  transform: translate(50%, 0);
 }
 .modal-overlay {
   position: fixed;
@@ -559,9 +571,6 @@ p {
   border-radius: 4px;
   width: 484px;
   min-height: 584px;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 .modal-overlay .is-open {
   opacity: 1;
@@ -577,7 +586,7 @@ p {
   right: 24px;
   width: 24px;
   height: 24px;
-  /* outline: none; */
+  outline: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   color: #2e2f42;
@@ -596,7 +605,7 @@ p {
 .modal-wrapper {
   margin-bottom: 8px;
 }
-.modal-labei {
+.modal-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -611,6 +620,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate();
 }
 .modal-field-input {
   border-radius: 4px;
@@ -641,6 +651,7 @@ p {
   color: rgba(46, 47, 66, 0.4);
 }
 .agreement {
+  display: block;
   margin-bottom: 24px;
   font-size: 12px;
   line-height: 1.17;
@@ -661,4 +672,22 @@ p {
   border: none;
   background-color: #4d5ae5;
   fill: #f4f4fd;
+}
+.agreement-checkbox-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.btn-submit {
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
