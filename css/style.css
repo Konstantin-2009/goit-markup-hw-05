@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
@@ -558,6 +562,14 @@ p {
   height: 100%;
   padding: 72px 24px 24px 24px;
   background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
 }
 .modal {
   position: absolute;
@@ -568,11 +580,6 @@ p {
   border-radius: 4px;
   width: 484px;
   min-height: 584px;
-}
-.modal-overlay .is-open {
-  opacity: 1;
-  pointer-events: initial;
-  visibility: visible;
 }
 .modal-btn {
   display: flex;
