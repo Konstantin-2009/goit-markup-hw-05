@@ -596,13 +596,13 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="reviev" autocomplete="on">
           <div class="modal-wrapper">
-            <label class="modal-label" for="user_name">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-field">
               <input
                 class="modal-field-input"
                 type="text"
-                id="user_name"
-                name="user_name"
+                id="user-name"
+                name="user-name"
                 required />
               <svg class="modal-field-icon" width="18" height="24">
                 <use href="./images/icons.2.svg#person"></use>
@@ -638,12 +638,12 @@
             </div>
           </div>
           <div class="modal-wrapper">
-            <label class="modal-label" for="user_message">Comment</label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <div class="modal-field">
               <textarea
                 class="modal-messang"
-                name="user_message"
-                id="user_message"
+                name="user-comment"
+                id="user-comment"
                 cols="30"
                 rows="4"
                 placeholder="Text input"></textarea>
@@ -652,10 +652,11 @@
           <div class="checkbox-container">
             <input
               class="visually-hidden checkbox-hidden"
-              type="privacy_policy"
-              name="checkbox"
-              id="checkbox" />
-            <label class="agreement" for="checkbox">
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              id="user-privacy" />
+            <label class="agreement" for="user-privacy">
               <span class="agreement-checkbox">
                 <svg class="agreement-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.2.svg#checkbox"></use>
