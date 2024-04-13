@@ -496,7 +496,6 @@ p {
 .footer-label {
   display: inline-block;
   border-radius: 4px;
-  padding: 8px 0 8px 8px;
   width: 264px;
   height: 40px;
   margin-right: 24px;
@@ -553,7 +552,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  align-items: center;
+
 }
 .footer-btn:hover,
 .footer-btn:focus {
@@ -562,7 +561,7 @@ p {
 .footer-btn-icon {
   margin-left: 16px;
   fill: #fff;
-  transform: translate(50%, 0);
+  transform: translate(0, 0);
 }
 .modal-overlay {
   position: fixed;
